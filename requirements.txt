@@ -2,4 +2,4 @@ matplotlib
 scikit-learn
 pandas
 seaborn
-xgboost
+xgboost 2.1.1
