@@ -42,7 +42,12 @@ if st.session_state.tab_selected == 0:
     department = st.selectbox('Department', department_encoder.classes_)
     region = st.selectbox('Region', region_encoder.classes_)
     education = st.selectbox('Education', education_encoder.classes_)
-    gender = st.radio('Gender', gender_encoder.classes_)
+    #gender = st.radio('Gender', gender_encoder.classes_)
+    gender = st.radio('Gender', ['Female','Male'])
+    if gender == 'Female' :
+        gender = 'f'
+    else:
+        gender = 'm'
     recruitment_channel = st.selectbox('Recruitment Channel', recruitment_channel_encoder.classes_)
     no_of_trainings = st.slider('Number of Trainings', 1, 10, 1)
     age = st.slider('Age', 18, 60, 30)
